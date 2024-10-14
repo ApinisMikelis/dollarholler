@@ -13,9 +13,9 @@
 
 
     onMount(async () => {
-    // Create the connection to the SignalR hub
+
     connection = new HubConnectionBuilder()
-      .withUrl('https://messagehub.azurewebsites.net/message-hub') // Replace with your hub URL
+      .withUrl(host)
       .build();
 
     // Start the connection
